@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/user" method="get">
+    <input value="REST-GET 提交" type="submit">
+</form>
+<form action="/user" method="post">
+    <input value="REST-POST 提交" type="submit">
+</form>
+<form action="/user" method="post">
+    <input name="_m" type="hidden" value="DELETE">
+    <input value="REST-DELETER 提交" type="submit">
+</form>
+<form action="/user" method="post">
+    <input name="_m" type="hidden" value="PUT">
+    <input value="REST-PUT 提交" type="submit">
+</form>
+<a href="car/3/owner/lisi?age=10&inters=basktabll&inters=game">car/3/owner/lisi</a>
+<br/>
+<form action="/save" method="post">
+    测试@RequestBody获取数据<br/>
+    用户名:<input name="userName"/><br/>
+    邮箱:<input name="email"/><br/>
+    <input type="submit" value="提交"/>
+</form>
+<ul>
+    <li>@PathVariable(路径变量)</li>
+    <li>@RequestHeader(获取请求头)</li>
+    <li>@RequestParam(获取请求参数)</li>
+    <li>@CookieValue(获取cookie值)</li>
+    <li>@RequestBody(获取请求体[POST])</li>
+    <li>@RequestAttribute(获取request域属性)</li>
+    <li>@MatrixVariable(矩阵变量)</li>
+</ul>
+<a href="/cars/sell;low=34;brand=byd,audi,yd">@MatrixVariable</a>
+<a href="/boss/1;age=20/2;age=10">@MatrixVariable()</a>
+
+<form action="/saveuser" method="post">
+    姓名:<input name="userName" value="zhangsan"/><br/>
+    年龄:<input name="age" value="18"/><br/>
+    生日:<input name="birth" value="2019/12/10"/><br/>
+    宠物姓名:<input name="pet.name" value="阿猫"/><br/>
+    宠物年龄:<input name="pet.age" value="5"/><br/>
+    <input type="submit" value="保存"/>
+</form>
+</body>
+</html>
