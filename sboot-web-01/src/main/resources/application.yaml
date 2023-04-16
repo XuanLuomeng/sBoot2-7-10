@@ -5,3 +5,7 @@ spring:
         enabled: true
     contentnegotiation:
       favor-parameter: true
+
+server:
+  servlet:
+    context-path: /world

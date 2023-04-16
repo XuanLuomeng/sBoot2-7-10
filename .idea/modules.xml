@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sBoot2-7-9.iml" filepath="$PROJECT_DIR$/sBoot2-7-9.iml" />
       <module fileurl="file://$PROJECT_DIR$/sboot-web-01/sboot-web-01.iml" filepath="$PROJECT_DIR$/sboot-web-01/sboot-web-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sboot-web-02/sboot-web-02.iml" filepath="$PROJECT_DIR$/sboot-web-02/sboot-web-02.iml" />
     </modules>
   </component>
 </project>
