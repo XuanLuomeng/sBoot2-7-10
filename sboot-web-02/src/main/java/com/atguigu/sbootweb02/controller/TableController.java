@@ -1,6 +1,7 @@
 package com.atguigu.sbootweb02.controller;
 
 import com.atguigu.sbootweb02.bean.User;
+import com.atguigu.sbootweb02.exception.UserTooManyException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +24,10 @@ public class TableController {
                 new User("haha", "aaaaaa"),
                 new User("hehe", "aaaddd"));
         model.addAttribute("users",users);
+
+//        if(users.size()>3){
+//            throw new UserTooManyException();
+//        }
         return "table/dynamic_table";
     }
 
