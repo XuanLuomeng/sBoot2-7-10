@@ -59,6 +59,15 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.26" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.26" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.26" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-jdbc:2.7.10" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.7.10" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:4.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.3.26" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jdbc:2.4.10" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-relational:2.4.10" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.7.10" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.26" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.47" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.boot:spring-boot-devtools:2.7.10" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.7.10" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.7.10" level="project" />
