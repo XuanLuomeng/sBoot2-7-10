@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
 
-@Configuration(proxyBeanMethods = true)
+//@Configuration(proxyBeanMethods = true)
 public class MyRegistConfig {
     @Bean
     public ServletRegistrationBean myServlet() {

@@ -1,16 +1,34 @@
 package com.atguigu.sbootweb02.controller;
 
+import com.atguigu.sbootweb02.bean.Student;
 import com.atguigu.sbootweb02.bean.User;
+import com.atguigu.sbootweb02.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
 @Controller
 public class IndexController {
+
+    @Autowired
+    JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    StudentService studentService;
+
+    @ResponseBody
+    @GetMapping("/student")
+    public Student getById(@RequestParam("id") Integer id) {
+        return studentService.getStudentById(id);
+    }
 
     /**
      * 登陆页面
@@ -41,7 +59,7 @@ public class IndexController {
      * @return
      */
     @GetMapping("/main.html")
-    public String mainPage(HttpSession session, Model model) {
+    public String mainPage() {
         //是否登录。   拦截器，过滤器
 //        Object loginUser = session.getAttribute("loginUser");
 //        if (loginUser != null) {

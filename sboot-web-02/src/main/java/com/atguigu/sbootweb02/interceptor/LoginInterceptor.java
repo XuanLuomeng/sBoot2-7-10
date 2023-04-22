@@ -1,6 +1,7 @@
 package com.atguigu.sbootweb02.interceptor;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.plugin.Intercepts;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
