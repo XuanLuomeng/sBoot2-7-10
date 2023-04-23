@@ -62,14 +62,20 @@
         <thead>
         <tr>
             <th>#</th>
-            <th>用户名</th>
-            <th>密码</th>
+            <th>id</th>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+            <th>操作</th>
         </tr>
         </thead>
         <tbody>
-        <tr class="gradeX" th:each="user,stats:${users}">
+        <tr class="gradeX" th:each="user,stats:${page.records}">
             <td th:text="${stats.count}">Trident</td>
-            <td th:text="${user.userName}">Internet</td>
+            <td th:text="${user.id}">Trident</td>
+            <td th:text="${user.name}">Internet</td>
+            <td th:text="${user.age}">Internet</td>
+            <td th:text="${user.email}">Internet</td>
             <td>[[${user.password}]]</td>
         </tr>
         </tbody>

@@ -1,8 +1,10 @@
 package com.atguigu.sbootweb02.controller;
 
+import com.atguigu.sbootweb02.bean.City;
 import com.atguigu.sbootweb02.bean.Student;
 import com.atguigu.sbootweb02.bean.User;
-import com.atguigu.sbootweb02.service.StudentService;
+import com.atguigu.sbootweb02.service.impl.CityServiceImpl;
+import com.atguigu.sbootweb02.service.impl.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
@@ -22,7 +24,23 @@ public class IndexController {
     JdbcTemplate jdbcTemplate;
 
     @Autowired
-    StudentService studentService;
+    StudentServiceImpl studentService;
+
+    @Autowired
+    CityServiceImpl cityService;
+
+    @ResponseBody
+    @PostMapping("/city")
+    public City saveCity(City city){
+        cityService.saveCity(city);
+        return city;
+    }
+
+    @ResponseBody
+    @GetMapping("/city")
+    public City getCityId(@RequestParam("id") Long id) {
+        return cityService.getById(id);
+    }
 
     @ResponseBody
     @GetMapping("/student")
