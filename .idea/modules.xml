@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mybatisplus/mybatisplus.iml" filepath="$PROJECT_DIR$/mybatisplus/mybatisplus.iml" />
       <module fileurl="file://$PROJECT_DIR$/sBoot2-7-9.iml" filepath="$PROJECT_DIR$/sBoot2-7-9.iml" />
       <module fileurl="file://$PROJECT_DIR$/sboot-web-01/sboot-web-01.iml" filepath="$PROJECT_DIR$/sboot-web-01/sboot-web-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/sboot-web-02/sboot-web-02.iml" filepath="$PROJECT_DIR$/sboot-web-02/sboot-web-02.iml" />

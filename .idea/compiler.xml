@@ -8,15 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sboot-web-02" />
         <module name="sboot-web-01" />
+        <module name="mybatisplus" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mybatisplus" target="1.8" />
       <module name="sboot-web-01" target="1.8" />
       <module name="sboot-web-02" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mybatisplus" options="-parameters" />
       <module name="sboot-web-01" options="-parameters" />
       <module name="sboot-web-02" options="-parameters" />
     </option>
