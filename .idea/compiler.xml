@@ -14,7 +14,7 @@
     <bytecodeTargetLevel>
       <module name="mybatisplus" target="1.8" />
       <module name="sboot-web-01" target="1.8" />
-      <module name="sboot-web-02" target="1.8" />
+      <module name="sboot-web-02" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
